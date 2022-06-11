@@ -310,14 +310,34 @@ SP
   .sec-title {
     margin-bottom: 40px;
   }
+  .main-nav {
+    background: var(--grey);
+    width: 0;
+    position: absolute;
+    z-index: 2;
+    top: 59px;
+    right: 0;
+    overflow: hidden;
+    transition: .5s;
+  }
+  .main-nav li {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  .main-nav a {
+    display: block;
+  }
   .main-nav.open-menu {
-  width:100%;
-  flex-direction: column;
-  position: fixed;
-  background-color: #000;
-  margin-top: 25px;
-  z-index: 200;
-}
+    width:100%;
+    flex-direction: column;
+    position: fixed;
+    background-color: #000;
+    padding: 0;
+    margin-top: 25px;
+  }
+  .main-nav.open-menu a{
+    color: #fff;
+  }
 .btn-menu {
   top: 80px;
   right: 55px;
