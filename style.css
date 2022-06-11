@@ -77,7 +77,7 @@ Topへ戻るボタン
 }
 #header ul {
   display: flex;
-  padding: 10px 0;
+  padding: 35px 0;
 }
 #header li {
   font-size: 0.9rem;
@@ -216,7 +216,7 @@ Skills
 -------------------------------------------*/
 .s-flex-items {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
@@ -356,7 +356,8 @@ SP
   }
   #header li {
     font-size: 0.6rem;
-    margin-left: 20px;
+    margin-left: 15px;
+    font-weight: bold;
   }
   #header li:first-child {
     margin-left: 0;
@@ -377,10 +378,10 @@ SP
   .containar {
     flex-direction: column;
   }
-  .item {
-    margin: 0 3rem 1rem 0;
-    float: left;
-  }
+    #profile img {
+    width: 100%;
+    object-fit: cover;
+}
 
   /*-------------------------------------------
   Works
