@@ -316,9 +316,15 @@ SP
   position: fixed;
   background-color: #000;
   margin-top: 25px;
+  z-index: 200;
 }
 .btn-menu {
+  top: 80px;
   right: 55px;
+  z-index: 200;
+}
+.main-nav.open-menu {
+  margin-top: 93px;
 }
   /*-------------------------------------------
   ヘッダー
