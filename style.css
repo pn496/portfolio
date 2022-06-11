@@ -310,7 +310,16 @@ SP
   .sec-title {
     margin-bottom: 40px;
   }
-
+  .main-nav.open-menu {
+  width:100%;
+  flex-direction: column;
+  position: fixed;
+  background-color: #000;
+  margin-top: 25px;
+}
+.btn-menu {
+  right: 55px;
+}
   /*-------------------------------------------
   ヘッダー
   -------------------------------------------*/
@@ -320,15 +329,22 @@ SP
     flex-direction: column;
   }
   #header li {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     margin-left: 20px;
   }
   #header li:first-child {
     margin-left: 0;
   }
   #header img {
-    max-width: 10rem;
+    max-width: 8rem;
 }
+  #mainvisual img {
+    height: 42vh;
+  }
+  #header li img.icon {
+    max-width: 50px;
+    margin: -17px 0 0;
+  }
   /*-------------------------------------------
   プロフィール
   -------------------------------------------*/
@@ -354,7 +370,7 @@ SP
   Skills
   -------------------------------------------*/
   .s-flex-item {
-  max-width: 100%;
+  width: 7rem;
   }
 
   /*-------------------------------------------
@@ -369,8 +385,12 @@ SP
     padding-bottom: 0;
   }
   #future dd {
+    font-size: 13px;
     width: 100%;
     padding-top: 0;
+  }
+  dd img {
+    width: 4rem;
   }
 
   /*-------------------------------------------
