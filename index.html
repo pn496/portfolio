@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/cce9faee66.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
     <link rel="stylesheet" href="#">
     <link rel="stylesheet" href="style.css">
   </head>
@@ -59,8 +60,10 @@
                 <p class="profile-title">Greeting</p>
                 <p>
                 完全未経験から独学でプログラミングを勉強しております。<br>
+                Webの世界で無限に創作できるWebクリエーターという仕事に魅了されました。
                 これまで培ってきた経験で得たコミュニケーション力・管理スキルを生かしつつ、
-                Webの世界で無限に創作できるWebクリエーターという仕事に魅了されました。<br>
+                楽しくお仕事がモットーです。
+                <br>
                 <br>
                 Web制作においては、クライアントの求める条件を満たし、売上・デザイン・集客・保守運用を考えた、
                 成果物納品後からスタートする「長いお付き合いのできるものづくり」が信条です。<br>
@@ -153,17 +156,34 @@
 
       <section id="contact" class="wrapper">
         <h2 class="sec-title">Contact</h2>
-        <form action="#" method="post">
+        <form action="https://api.staticforms.xyz/submit" method="post">
           <dl>
             <dt><label for="name">NAME</label></dt>
-            <dd><input type="text" id="name" name="your-name"></dd>
+            <dd><input type="text" id="name" name="name"></dd>
             <dt><label for="email">E-mail</label></dt>
-            <dd><input type="email" id="email" name="your-email"></dd>
+            <dd><input type="text" id="email" name="email"></dd>
             <dt><label for="message">MESSAGE</label></dt>
-            <dd><textarea id="message" name="your-message"></textarea></dd>
+            <dd><textarea id="message" name="message"></textarea></dd>
           </dl>
           <div class="button"><input type="submit" value="送信"></div>
+        <!-- Make sure you don't change the form action-->
+          <form action="https://api.staticforms.xyz/submit" method="post">
+            <!-- Replace with accesKey sent to your email -->
+            <input type="hidden" name="accessKey" value="f4b9148e-1096-4e40-aa49-86f52f6c3145"> <!-- Required -->
+            <input type="text" name="name"> <!-- Optional -->
+            <input type="text" name="subject"> <!-- Optional -->
+            <input type="text" name="email"> <!-- Optional -->
+            <input type="text" name="phone"> <!-- Optional -->
+            <!-- If you want replyTo to be set to specific email -->
+            <input type="hidden" name="replyTo" value="myreplytoemail@example.com"> <!-- Optional -->
+            <!-- Specify @ as reply to value if you want it to be customers email -->
+            <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
+            <!-- If you want form to redirect to a specific url after submission -->
+            <input type="hidden" name="redirectTo" value="https://example.com/contact/success"> <!-- Optional -->
+            <input type="hidden" value="Submit" />
+          </form>
         </form>
+        
       </section>
     </main>
 

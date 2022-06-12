@@ -6,6 +6,7 @@ html {
 }
 body {
   color: #24292e;
+  font-family: "Noto Sans JP";
 }
 a {
   text-decoration: none;
@@ -179,6 +180,7 @@ Profile
 #profile li:first-child {
   margin-bottom: 15px;
   font-weight: bold;
+  font-size: 1.2rem;
 }
 #profile p {
   text-align:justify;
@@ -187,6 +189,7 @@ Profile
 #profile .profile-title {
     margin-bottom: 15px;    
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 /*-------------------------------------------
@@ -203,6 +206,10 @@ Works
 }
 .w-flex-item > img {
     max-width: 100%;
+    width: 100%;
+    height: 152px;
+    object-fit: cover;
+    object-position: center;
 }
 #works p {
     margin-bottom: 35px;
@@ -338,14 +345,18 @@ SP
   .main-nav.open-menu a{
     color: #fff;
   }
-.btn-menu {
-  top: 80px;
-  right: 55px;
-  z-index: 200;
-}
-.main-nav.open-menu {
-  margin-top: 93px;
-}
+  .page_top {
+    right: 13px;
+    bottom: 13px;
+  }
+  .btn-menu {
+    top: 13px;
+    right: 13px;
+    z-index: 200;
+  }
+  .main-nav.open-menu {
+    margin-top: 26px;
+  }
   /*-------------------------------------------
   ヘッダー
   -------------------------------------------*/
@@ -372,17 +383,25 @@ SP
     max-width: 50px;
     margin: -17px 0 0;
   }
+  #mainvisual {
+    margin-bottom: 20px;
+  }
   /*-------------------------------------------
   プロフィール
   -------------------------------------------*/
   .containar {
     flex-direction: column;
   }
-    #profile img {
+  #profile img {
     width: 100%;
     object-fit: cover;
-}
-
+  }
+  #profile p {
+  margin: 0 0 20px;
+  }
+  #profile ul {
+    margin: 0;
+  }
   /*-------------------------------------------
   Works
   -------------------------------------------*/
@@ -391,6 +410,7 @@ SP
   }
   .w-flex-item {
   max-width: 100%;
+  align-items: center;
   }
 
   /*-------------------------------------------
