@@ -78,7 +78,7 @@ Topへ戻るボタン
 }
 #header ul {
   display: flex;
-  padding: 35px 0;
+  padding: 20px 0;
 }
 #header li {
   font-size: 0.9rem;
@@ -355,7 +355,7 @@ SP
     z-index: 200;
   }
   .main-nav.open-menu {
-    margin-top: 26px;
+    margin-top: 24px;
   }
   /*-------------------------------------------
   ヘッダー
@@ -374,7 +374,7 @@ SP
     margin-left: 0;
   }
   #header img {
-    max-width: 8rem;
+    max-width: 10rem;
 }
   #mainvisual img {
     height: 42vh;
