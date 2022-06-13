@@ -204,7 +204,7 @@ Works
 .w-flex-item {
     max-width: 31%;
 }
-.w-flex-item > img {
+.w-flex-item img {
     max-width: 100%;
     width: 100%;
     height: 152px;
