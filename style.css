@@ -171,6 +171,10 @@ Profile
 .containar {
     display: flex;
 }
+.line {
+  background: linear-gradient(transparent 80%, #4dd1eb 0%);
+  font-weight: bold;
+}
 #profile img {
     width: 25rem;
 }
@@ -355,7 +359,7 @@ SP
     z-index: 200;
   }
   .main-nav.open-menu {
-    margin-top: 24px;
+    margin-top: 25px;
   }
   /*-------------------------------------------
   ヘッダー
@@ -413,7 +417,6 @@ SP
   max-width: 100%;
   align-items: center;
   }
-
   /*-------------------------------------------
   Skills
   -------------------------------------------*/
