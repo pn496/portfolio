@@ -65,16 +65,17 @@ Topへ戻るボタン
 ヘッダー
 -------------------------------------------*/
 #header {
-  max-width: 960px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 270px;
+  height: 210px;
   margin: 0 auto;
   padding: 0 4%;
 }
 #header img {
     max-width: 13rem;
+    opacity: .6;
 }
 #header ul {
   display: flex;
@@ -89,12 +90,12 @@ Topへ戻るボタン
   padding: 5px 0 5px;
 }
 #header li a:hover {
-  background-color: cadetblue;
   color: #fff;
 }
 #header li img.icon {
   max-width: 50px;
   margin: -12px 0 0;
+  opacity: .6;
 }
 /*-------------------------------------------
 Menu-btn
@@ -161,7 +162,7 @@ Mainvisual
 #mainvisual img {
   width: 100%;
   max-width: 1920px;
-  height: 750px;
+  height: 150vh;
   object-fit: cover;
 }
 
@@ -307,7 +308,14 @@ Contact
   padding: 10px 20px;
   text-align: center;
 }
-
+/*------------------------------------------------------------------
+IPAD
+------------------------------------------------------------------*/
+@media screen and (max-width: 1200px) {
+  #mainvisual img {
+    height: 32vh;
+  }
+}
 /*------------------------------------------------------------------
 SP
 ------------------------------------------------------------------*/
