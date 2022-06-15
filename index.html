@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
     <header id="header">
-      <h1 class="site-title"><a href="index.html"><img src="images/main_logo.png" alt="main_logo"></a></h1>
+      <h1 class="site-title"><a><img src="images/main_logo.png" alt="main_logo"></a></h1>
       <div class="page_top"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
       <nav>
         <ul>
@@ -111,18 +112,18 @@
       </section>
 
       <section id="skills" class="wrapper">
-        <h2 class="sec-title">Skills<span class="font-size-small">TOUCH ME</span></h2>
+        <h2 class="sec-title">Skills<span class="font-size-small">〜 Any movement or color and <span class="yellow">design</span> is possible 〜</span></h2>
         <div class="s-flex-items">
-          <div class="s-flex-item"><img src="images/html_logo.jpg" alt="HTML"></div>
-          <div class="s-flex-item"><img src="images/css_logo.jpg" alt="CSS"></div>
-          <div class="s-flex-item"><img src="images/js_logo.jpg" alt="JavaScript"></div>
-          <div class="s-flex-item"><img src="images/jq_logo.jpg" alt="Jquery"></div>
-          <div class="s-flex-item"><img src="images/nj_logo.png" alt="Nodejs"></div>
-          <div class="s-flex-item"><img src="images/php_logo.png" alt="Php"></div>
-          <div class="s-flex-item"><img src="images/sql_logo.png" alt="Sql"></div>
-          <div class="s-flex-item"><img src="images/wp_logo.png" alt="Wordpress"></div>
-          <div class="s-flex-item"><img src="images/git_logo.png" alt="Git"></div>
-          <div class="s-flex-item"><img src="images/github_logo.png" alt="Github"></div>
+          <div class="s-flex-item"><img src="images/html_logo.jpg" data-aos="fade-left" alt="HTML"></div>
+          <div class="s-flex-item"><img src="images/css_logo.jpg" data-aos="fade-up" alt="CSS"></div>
+          <div class="s-flex-item"><img src="images/js_logo.jpg" data-aos="fade-down" alt="JavaScript"></div>
+          <div class="s-flex-item"><img src="images/jq_logo.jpg" data-aos="fade-right" alt="Jquery"></div>
+          <div class="s-flex-item"><img src="images/nj_logo.png" data-aos="fade-up-right" alt="Nodejs"></div>
+          <div class="s-flex-item"><img src="images/php_logo.png" data-aos="flip-up" alt="Php"></div>
+          <div class="s-flex-item"><img src="images/sql_logo.png" data-aos="slide-up" alt="Sql"></div>
+          <div class="s-flex-item"><img src="images/wp_logo.png" data-aos="slide-left" alt="Wordpress"></div>
+          <div class="s-flex-item"><img src="images/git_logo.png" data-aos="zoom-in" alt="Git"></div>
+          <div class="s-flex-item"><img src="images/github_logo.png" data-aos="zoom-in-right" alt="Github"></div>
         </ul>
       </section>
 
@@ -240,8 +241,27 @@
       speed: 0.65
     })
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script>
+    VANTA.NET({
+      el: "#skills",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x25c841,
+      backgroundColor: 0x0,
+      maxDistance: 24.00,
+      spacing: 14.00
+    })
+    </script>
         <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/script.js"></script>
   </body>
 

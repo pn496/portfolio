@@ -10,7 +10,6 @@ body {
 }
 a {
   text-decoration: none;
-  cursor: pointer;
 }
 li {
   list-style: none;
@@ -30,12 +29,14 @@ li {
 .sec-title {
   font-size: 2rem;
   text-align: center;
-  margin-bottom: 45px;
-  padding: 30px 0 0;
+  padding: 30px;
 }
 .font-size-small {
   font-size: small;
   margin-left: 20px;
+}
+.yellow {
+  color: yellow;
 }
 /*-------------------------------------------
 Topへ戻るボタン
@@ -77,8 +78,8 @@ Topへ戻るボタン
   padding: 0 4%;
 }
 #header img {
-    max-width: 13rem;
-    opacity: .6;
+  max-width: 13rem;
+  opacity: .5;
 }
 #header ul {
   display: flex;
@@ -100,6 +101,10 @@ Topへ戻るボタン
   margin: -12px 0 0;
   opacity: .6;
 }
+#header li img.icon:hover {
+  opacity: 1;
+}
+
 /*-------------------------------------------
 Menu-btn
 -------------------------------------------*/
@@ -226,6 +231,16 @@ Works
 .w-flex-item img:hover {
   transform: scale(1.1);
   transition: 1s;
+  animation: hover-flash 1s;
+}
+@keyframes hover-flash {
+  0% {
+    opacity: .2;
+  }
+  100% {
+    opacity: 1;
+  }
+  
 }
 #works p {
     margin: 10px 0 30px;
@@ -233,7 +248,6 @@ Works
 }
 #works {
   background: rgb(95,158,160,0.2);
-  transition: 5s;
 }
 /*-------------------------------------------
 Skills
@@ -245,25 +259,21 @@ Skills
   margin-bottom: 50px;
 }
 .s-flex-item {
-  width: 11rem;
+  width: 10rem;
+  margin: 20px 10px;
 }
 .s-flex-item > img {
   width: 10rem;
   height: 10rem;
   background-color: #fff;
 }
+.s-flex-item > img:hover {
+  transform: rotate(10deg);
+  }
 #skills {
-	background:rgb(70, 70, 76, .1);
-	/* テキスト選択させない */
-	-webkit-user-select:none;
-	-moz-user-select:none;
-	-ms-user-select:none;
-	user-select:none;
+  color: #fff;
   cursor: pointer;
   padding-bottom: 1px;
-}
-#eventname {
-	margin: 0 0 8px;
 }
 /*-------------------------------------------
 Future steps
@@ -351,9 +361,6 @@ SP
   }
   .site-title {
     margin-top: 20px;
-  }
-  .sec-title {
-    margin-bottom: 40px;
   }
   .main-nav {
     background: var(--grey);
@@ -455,8 +462,18 @@ SP
   Skills
   -------------------------------------------*/
   .s-flex-item {
-  width: 10rem;
+  width: 8rem;
+  height: 8rem;
   }
+  .s-flex-item > img {
+  width: 8rem;
+  height: 8rem;
+  }
+
+  .s-flex-items {
+  justify-content: space-between;
+  }
+
 
   /*-------------------------------------------
   Future steps
