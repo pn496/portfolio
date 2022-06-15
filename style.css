@@ -216,6 +216,7 @@ Works
 }
 .w-flex-item {
     max-width: 31%;
+        cursor: pointer;
 }
 .w-flex-item img:first-child{
   background-color: #fff;
