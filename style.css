@@ -259,14 +259,14 @@ Works
 Skills
 -------------------------------------------*/
 .s-flex-items {
-  display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-top: 3vh;
   margin-bottom: 50px;
+  display: flex;
 }
 .s-flex-item {
-  width: 10rem;
-  margin: 20px 10px;
+  margin: 20px;
 }
 .s-flex-item:nth-child(1):hover {
   transform: rotate(360deg);
@@ -317,14 +317,14 @@ Skills
 }
 .s-flex-item:nth-child(10):active {
   transform: translate(-80px,-100px);
-  transition: 0.3s;
+  transition: 0.8s;
   cursor: grab;
   zoom: 200%;
   mix-blend-mode: color-dodge;
 }
 .s-flex-item > img {
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
   background-color: #fff;
 }
 #skills {
@@ -332,20 +332,18 @@ Skills
   cursor: pointer;
   padding-bottom: 1px;
 }
-#skills .sec-title {
-  position: relative;
-}
 /*-------------------------------------------
 3DBOX
 -------------------------------------------*/
 .parent3Dtransform{
   transform-style: preserve-3d;
   perspective: 220px;
-  position: absolute;
   width:50px;
-  height:50px;
-  top:-5vh;
-  left: 8vw;
+  height:65px;
+  top: 4vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   }
 .parent3Dtransform:hover {
   transform: rotate3d(1,1,1,360deg);
@@ -354,8 +352,6 @@ Skills
   }
   .parent3Dtransform div{
   position: absolute;
-  margin-left: 50px;
-  margin-top: 75px;
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -460,11 +456,21 @@ IPAD
   #mainvisual img {
     height: 85vh;
   }
-.parent3Dtransform{
-  top:-4vh;
-  left: 14vw;
+  .s-flex-item {
+    margin: 10px;
   }
-}  
+} 
+/*------------------------------------------------------------------
+SP
+------------------------------------------------------------------*/
+@media screen and (max-width: 860px) {
+  .containar {
+    flex-direction: column;
+  }
+  #profile img {
+    margin-bottom: 20px;
+  }
+}
 /*------------------------------------------------------------------
 SP
 ------------------------------------------------------------------*/
@@ -547,16 +553,12 @@ SP
   /*-------------------------------------------
   プロフィール
   -------------------------------------------*/
-  .containar {
-    flex-direction: column;
-  }
   #profile img {
     width: 100%;
     object-fit: cover;
-    margin-bottom: 20px;
   }
   #profile p {
-  margin: 0 0 20px;
+    margin: 0 0 20px;
   }
   #profile ul {
     margin: 0;
@@ -565,31 +567,31 @@ SP
   Works
   -------------------------------------------*/
   .w-flex-items {
-  flex-direction: column;
+    flex-direction: column;
   }
   .w-flex-item {
-  max-width: 100%;
-  align-items: center;
+    max-width: 100%;
+    align-items: center;
   }
   /*-------------------------------------------
   Skills
   -------------------------------------------*/
   .s-flex-item {
-  width: 8rem;
-  height: 8rem;
+    margin: 10px;
   }
-  .s-flex-item > img {
-  width: 8rem;
-  height: 8rem;
-  }
-
   .s-flex-items {
-  justify-content: space-between;
+    justify-content: space-between;
   }
-  .parent3Dtransform{
-    top:-27vh;
-    left: 28vw;
-    }
+  .s-flex-item:nth-child(9):active {
+    transform: translate(0,-150px);
+    mix-blend-mode: difference;
+    zoom: 100%;
+  }
+  .s-flex-item:nth-child(10):active {
+    transform: translate(0,-150px);
+    mix-blend-mode: lighten;
+    zoom: 100%;
+  }
   /*-------------------------------------------
   Future steps
   -------------------------------------------*/
