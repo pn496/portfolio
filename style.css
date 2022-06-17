@@ -182,14 +182,14 @@ Mainvisual
 Profile
 -------------------------------------------*/
 .containar {
-    display: flex;
+  display: flex;
 }
 .line {
   background: linear-gradient(transparent 80%, #4dd1eb 0%);
   font-weight: bold;
 }
 #profile img {
-    width: 25rem;
+  width: 25rem;
 }
 #profile ul {
   margin: 0 0 30px 40px;
@@ -205,34 +205,40 @@ Profile
   line-height: 1.4rem;
 }
 #profile .profile-title {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 7px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 7px;
 }
-
 /*-------------------------------------------
 Works
 -------------------------------------------*/
+#works {
+  background: rgb(95,158,160,0.2);
+}
+#works p {
+    margin: 10px 0 30px;
+    text-align: center;
+}
 .w-flex-items {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 .w-flex-item {
-    max-width: 31%;
-        cursor: pointer;
+  max-width: 31%;
+  cursor: pointer;
+}
+.w-flex-item img {
+  max-width: 100%;
+  width: 100%;
+  height: 152px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 5px 5px 5px black;
 }
 .w-flex-item img:first-child{
   background-color: #fff;
-}
-.w-flex-item img {
-    max-width: 100%;
-    width: 100%;
-    height: 152px;
-    object-fit: cover;
-    object-position: center;
-    box-shadow: 5px 5px 5px black;
 }
 .w-flex-item img:hover {
   transform: scale(1.1);
@@ -240,20 +246,8 @@ Works
   animation: hover-flash 1s;
 }
 @keyframes hover-flash {
-  0% {
-    opacity: .2;
-  }
-  100% {
-    opacity: 1;
-  }
-  
-}
-#works p {
-    margin: 10px 0 30px;
-    text-align: center;
-}
-#works {
-  background: rgb(95,158,160,0.2);
+  0% { opacity: .2;}
+  100% { opacity: 1;}
 }
 /*-------------------------------------------
 Skills
@@ -449,7 +443,7 @@ Contact
 /*------------------------------------------------------------------
 IPAD
 ------------------------------------------------------------------*/
-@media screen and (max-width: 1200px) and (min-width: 601px) {
+@media screen and (max-width: 1250px) and (min-width: 601px) {
   #mainvisual img {
     height: 85vh;
   }
@@ -547,7 +541,8 @@ SP
     max-width: 10rem;
 }
   #mainvisual img {
-    height: 42vh;
+    height: 48vh;
+    padding: 4% 4%;
   }
   #header li img.icon {
     max-width: 50px;
