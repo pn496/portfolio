@@ -463,19 +463,15 @@ IPAD
     top: 3vh;
     height: 80px;
   }
-  .s-flex-item:nth-child(9):active {
-    transform: translate(0,-125px);
-    transition: 0.8s;
-    cursor: grab;
-    mix-blend-mode: difference;
-    zoom: 150%;
+  .parent3Dtransform:hover {
+    transform: none;
+    transition: 0;
   }
-  .s-flex-item:nth-child(10):active {
-    transform: translate(0,-110px);
-    transition: 0.8s;
-    cursor: grab;
-    zoom: 150%;
-    mix-blend-mode: color-dodge;
+  .s-flex-item:nth-child(4):hover {
+    transform: rotateY(720deg);
+  }
+  .s-flex-item:nth-child(8):hover {
+    transform: rotateX(720deg);
   }
 } 
 /*------------------------------------------------------------------
