@@ -40,6 +40,62 @@ li {
   color: yellow;
 }
 /*-------------------------------------------
+Menu-btn
+-------------------------------------------*/
+.btn-menu {
+  position: absolute;
+  top: 12px;
+  right: 35px;
+  padding: 1.5rem 1rem;  
+  color: var(--white);
+  position: fixed;
+  z-index: 1;
+  border: #fff;
+  transition: 1.3s;
+  cursor: pointer;
+  background-color: rgba(234, 224, 224, 0.7);
+  /*デフォルトで非表示にする*/
+  opacity: 0;
+  visibility: hidden;
+}
+/*このクラスが付与されると表示する*/
+.active{
+  opacity: 1;
+  visibility: visible;
+}
+.btn-menu:hover {
+  background-color: cadetblue;
+  color: #fff;
+}
+.main-nav {
+  background: var(--grey);
+  position: absolute;
+  z-index: 2;
+  width: 0;  
+  top: 59px;
+  right: 0;
+  overflow: hidden;
+  transition: .5s;
+}
+.main-nav li {
+  text-align: center;
+  margin: 2rem 0;
+}
+.main-nav a {
+  display: block;
+}
+.main-nav.open-menu {
+  width:30%;
+  padding: 0;
+  margin-top: 25px;  
+  flex-direction: column;
+  position: fixed;
+  background-color: #000;
+}
+.main-nav.open-menu a{
+  color: #fff;
+}
+/*-------------------------------------------
 Topへ戻るボタン
 -------------------------------------------*/
 .page_top {
@@ -47,9 +103,9 @@ Topへ戻るボタン
   right: 50px;
   bottom: 75px;
   font-size: 45px;
+  padding: 0px 15px 0px 15px;  
   color: #000;
   background-color: rgba(234, 224, 224, 0.7);
-  padding: 0px 15px 0px 15px;
   cursor: pointer;
   transition: 1.3s;
   z-index: 150;    
@@ -72,12 +128,12 @@ Topへ戻るボタン
 -------------------------------------------*/
 #header {
   width: 100%;
+  height: 208px;
+  margin: 0 auto;
+  padding: 0 4%;  
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 208px;
-  margin: 0 auto;
-  padding: 0 4%;
 }
 #header a {
   width: 11rem;
@@ -109,63 +165,6 @@ Topへ戻るボタン
 #header li img.icon:hover {
   opacity: 1;
 }
-
-/*-------------------------------------------
-Menu-btn
--------------------------------------------*/
-.btn-menu {
-  position: absolute;
-  top: 12px;
-  right: 35px;
-  color: var(--white);
-  padding: 1.5rem 1rem;
-  position: fixed;
-  z-index: 1;
-  border: #fff;
-  transition: 1.3s;
-  cursor: pointer;
-  background-color: rgba(234, 224, 224, 0.7);
-  /*デフォルトで非表示にする*/
-  opacity: 0;
-  visibility: hidden;
-}
-/*このクラスが付与されると表示する*/
-.active{
-  opacity: 1;
-  visibility: visible;
-}
-.btn-menu:hover {
-  background-color: cadetblue;
-  color: #fff;
-}
-.main-nav {
-  background: var(--grey);
-  width: 0;
-  position: absolute;
-  z-index: 2;
-  top: 59px;
-  right: 0;
-  overflow: hidden;
-  transition: .5s;
-}
-.main-nav li {
-  text-align: center;
-  margin: 2rem 0;
-}
-.main-nav a {
-  display: block;
-}
-.main-nav.open-menu {
-  width:30%;
-  flex-direction: column;
-  position: fixed;
-  background-color: #000;
-  padding: 0;
-  margin-top: 25px;
-}
-.main-nav.open-menu a{
-  color: #fff;
-}
 /*-------------------------------------------
 Mainvisual
 -------------------------------------------*/
@@ -179,7 +178,6 @@ Mainvisual
   padding: 11% 16%;
   object-fit: cover;
 }
-
 /*-------------------------------------------
 Profile
 -------------------------------------------*/
@@ -460,12 +458,12 @@ IPAD
     margin: 10px;
   }
   .parent3Dtransform{
-    top: 3vh;
-    height: 80px;
+    top: 2.5vh;
+    height: 90px;
   }
   .parent3Dtransform:hover {
-    transform: none;
-    transition: 0;
+    transform: rotateY(720deg);
+    transition: 3s;
   }
   .s-flex-item:nth-child(4):hover {
     transform: rotateY(720deg);
