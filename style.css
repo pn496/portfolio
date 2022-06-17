@@ -43,7 +43,6 @@ li {
 Menu-btn
 -------------------------------------------*/
 .btn-menu {
-  position: absolute;
   top: 12px;
   right: 35px;
   padding: 1.5rem 1rem;  
@@ -152,7 +151,7 @@ Topへ戻るボタン
 }
 #header li a {
   color: #24292e;
-  padding: 5px 0 5px;
+  padding: 5px 0;
 }
 #header li a:hover {
   color: rgb(4, 139, 235);
@@ -168,14 +167,10 @@ Topへ戻るボタン
 /*-------------------------------------------
 Mainvisual
 -------------------------------------------*/
-#mainvisual {
-  margin-bottom: 80px;
-}
 #mainvisual img {
   width: 100%;
-  max-width: 1920px;
-  height: 150vh;
-  padding: 11% 16%;
+  height: 122vh;
+  padding: 4%;
   object-fit: cover;
 }
 /*-------------------------------------------
@@ -201,13 +196,13 @@ Profile
 }
 #profile p {
   text-align:justify;
-  margin: 0 0 9px 40px;
+  margin: 5px 0 15px 40px;
   line-height: 1.4rem;
 }
 #profile .profile-title {
   font-weight: bold;
-  font-size: 1.2rem;
-  margin-bottom: 7px;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 /*-------------------------------------------
 Works
@@ -444,7 +439,7 @@ IPAD
 ------------------------------------------------------------------*/
 @media screen and (max-width: 1200px) and (min-width: 601px) {
   #mainvisual img {
-    height: 85vh;
+    height: 67vh;
   }
   .parent3Dtransform{
     margin-bottom: 1vh;
@@ -463,7 +458,7 @@ IPAD
   }
 } 
 /*------------------------------------------------------------------
-SP
+SP<860px
 ------------------------------------------------------------------*/
 @media screen and (max-width: 860px) {
   .containar {
@@ -474,22 +469,24 @@ SP
   }
 }
 /*------------------------------------------------------------------
-SP
+SP<600px
 ------------------------------------------------------------------*/
 @media screen and (max-width: 600px) {
-  .wrapper {
-    margin-bottom: 30px;
+  .btn-menu {
+    top: 13px;
+    right: 13px;
+    z-index: 200;
   }
-  .site-title {
-    margin-top: 20px;
+  .main-nav.open-menu {
+    margin-top: 25px;
   }
   .main-nav {
     background: var(--grey);
     width: 0;
+    top: 59px;
+    right: 0;    
     position: absolute;
     z-index: 2;
-    top: 59px;
-    right: 0;
     overflow: hidden;
     transition: .5s;
   }
@@ -502,11 +499,11 @@ SP
   }
   .main-nav.open-menu {
     width:100%;
+    padding: 0;
+    margin-top: 25px;    
     flex-direction: column;
     position: fixed;
     background-color: #000;
-    padding: 0;
-    margin-top: 25px;
   }
   .main-nav.open-menu a{
     color: #fff;
@@ -514,14 +511,12 @@ SP
   .page_top {
     right: 13px;
     bottom: 13px;
+  }  
+  .wrapper {
+    margin-bottom: 30px;
   }
-  .btn-menu {
-    top: 13px;
-    right: 13px;
-    z-index: 200;
-  }
-  .main-nav.open-menu {
-    margin-top: 25px;
+  .site-title {
+    margin-top: 20px;
   }
   /*-------------------------------------------
   ヘッダー
@@ -541,10 +536,6 @@ SP
   }
   #header img {
     max-width: 10rem;
-}
-  #mainvisual img {
-    height: 48vh;
-    padding: 4% 4%;
   }
   #header li img.icon {
     max-width: 50px;
@@ -553,6 +544,10 @@ SP
   #mainvisual {
     margin-bottom: 0px;
   }
+  #mainvisual img {
+    height: 27vh;
+    padding: 4%;
+  }  
   /*-------------------------------------------
   プロフィール
   -------------------------------------------*/
@@ -585,15 +580,13 @@ SP
   .s-flex-items {
     justify-content: space-between;
   }
-  .s-flex-item:nth-child(9):active {
+  .s-flex-item:nth-child(9):hover {
     transform: translate(0,-150px);
     mix-blend-mode: difference;
-    zoom: 100%;
   }
-  .s-flex-item:nth-child(10):active {
+  .s-flex-item:nth-child(10):hover {
     transform: translate(0,-150px);
     mix-blend-mode: lighten;
-    zoom: 100%;
   }
   /*-------------------------------------------
   Future steps
@@ -614,7 +607,6 @@ SP
   dd img {
     width: 4rem;
   }
-
   /*-------------------------------------------
   Contact
   -------------------------------------------*/
