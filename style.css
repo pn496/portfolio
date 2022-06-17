@@ -250,6 +250,53 @@ Works
   100% { opacity: 1;}
 }
 /*-------------------------------------------
+3DBOX
+-------------------------------------------*/
+.parent3Dtransform{
+  transform-style: preserve-3d;
+  perspective: 400px;
+  width:20vw;
+  height:15vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10vh;
+}
+.parent3Dtransform div{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  cursor: crosshair;
+}
+.parent3Dtransform:hover {
+  transform: rotate3d(1,1,1,360deg);
+  transition: 3s;
+}
+.front{
+  transform: translate3d(0px, 0px, 25px);
+  background-color: rgba(226,9,27,0.5);
+}
+.back{
+  transform: translateZ(-75px);
+  background-color: rgba(2, 2, 196, 0.2);
+}
+.left{
+  background-color: rgba(53,111,2,0.5);
+  transform: translate3d(-50px, 0, -25px) rotateY(90deg);
+}
+.right{
+  transform: translate3d(50px, 0, -25px) rotateY(-90deg);
+  background-color: rgba(225,230,149,2.0);}
+.top{
+  transform: translate3d(0, -50px, -25px) rotateX(90deg);
+  background-color: rgba(54,2,196,0.5);
+}
+.bottom{
+  transform: translate3d(0, 50px, -25px) rotateX(90deg);
+  background-color: rgba(245, 238, 174, 0.5);
+}
+/*-------------------------------------------
 Skills
 -------------------------------------------*/
 .s-flex-items {
@@ -324,54 +371,7 @@ Skills
   cursor: pointer;
   padding-bottom: 1px;
 }
-/*-------------------------------------------
-3DBOX
--------------------------------------------*/
-.parent3Dtransform{
-  transform-style: preserve-3d;
-  perspective: 220px;
-  width:50px;
-  height:65px;
-  top: 4vh;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  }
-  .parent3Dtransform div{
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  cursor: crosshair;
-  }
-.parent3Dtransform:hover {
-  transform: rotate3d(1,1,1,360deg);
-  transition: 3s;
-  }
-  .front{
-  transform: translate3d(0px, 0px, 12.5px);
-  background-color: rgba(226,9,27,0.5);
-  }
-  .back{
-  transform: translateZ(-37.5px);
-  background-color: rgba(2, 2, 196, 0.2);
-  }
-  .left{
-  background-color: rgba(53,111,2,0.5);
-  transform: translate3d(-25px, 0, -12.5px) rotateY(90deg);
-  }
-  .right{
-  transform: translate3d(25px, 0, -12.5px) rotateY(-90deg);
-  background-color: rgba(225,230,149,2.0);}
-  .top{
-  transform: translate3d(0, -25px, -12.5px) rotateX(90deg);
-  background-color: rgba(54,2,196,0.5);
-  }
-  .bottom{
-  transform: translate3d(0, 25px, -12.5px) rotateX(90deg);
-  background-color: rgba(245, 238, 174, 0.5);
-  }
+
 /*-------------------------------------------
 Future steps
 -------------------------------------------*/
@@ -447,11 +447,11 @@ IPAD
   #mainvisual img {
     height: 85vh;
   }
+  .parent3Dtransform{
+    margin-bottom: 0;
+  }
   .s-flex-item {
     margin: 10px;
-  }
-  .parent3Dtransform{
-    display: none;
   }
   .s-flex-item:nth-child(4):hover {
     transform: rotateY(720deg);
