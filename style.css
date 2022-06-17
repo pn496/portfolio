@@ -175,6 +175,7 @@ Mainvisual
   width: 100%;
   max-width: 1920px;
   height: 150vh;
+  padding: 4% 4%;
   object-fit: cover;
 }
 
@@ -345,7 +346,7 @@ Skills
   margin-left: auto;
   margin-right: auto;
   }
-.parent3Dtransform:hover {
+.parent3Dtransform:active {
   transform: rotate3d(1,1,1,360deg);
   transition: 3s;
   cursor: crosshair;
@@ -459,6 +460,24 @@ IPAD
   .s-flex-item {
     margin: 10px;
   }
+  .parent3Dtransform{
+    top: 3vh;
+    height: 80px;
+  }
+  .s-flex-item:nth-child(9):active {
+    transform: translate(0,-125px);
+    transition: 0.8s;
+    cursor: grab;
+    mix-blend-mode: difference;
+    zoom: 150%;
+  }
+  .s-flex-item:nth-child(10):active {
+    transform: translate(0,-110px);
+    transition: 0.8s;
+    cursor: grab;
+    zoom: 150%;
+    mix-blend-mode: color-dodge;
+  }
 } 
 /*------------------------------------------------------------------
 SP
@@ -476,7 +495,7 @@ SP
 ------------------------------------------------------------------*/
 @media screen and (max-width: 600px) {
   .wrapper {
-    margin-bottom: 90px;
+    margin-bottom: 30px;
   }
   .site-title {
     margin-top: 20px;
@@ -548,7 +567,7 @@ SP
     margin: -17px 0 0;
   }
   #mainvisual {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   /*-------------------------------------------
   プロフィール
