@@ -16,7 +16,7 @@ li {
 }
 .wrapper {
   max-width: 960px;
-  margin: 0 auto 130px auto;
+  margin: 0 auto 110px;
   font-size: 0.9rem;
   padding: 0 4%;
 }
@@ -299,6 +299,11 @@ Works
 /*-------------------------------------------
 Skills
 -------------------------------------------*/
+#skills {
+  color: #fff;
+  cursor: pointer;
+  padding-bottom: 1px;
+}
 .s-flex-items {
   justify-content: space-around;
   flex-wrap: wrap;
@@ -366,12 +371,6 @@ Skills
   height: 8rem;
   background-color: #fff;
 }
-#skills {
-  color: #fff;
-  cursor: pointer;
-  padding-bottom: 1px;
-}
-
 /*-------------------------------------------
 Future steps
 -------------------------------------------*/
@@ -443,12 +442,15 @@ Contact
 /*------------------------------------------------------------------
 IPAD
 ------------------------------------------------------------------*/
-@media screen and (max-width: 1250px) and (min-width: 601px) {
+@media screen and (max-width: 1200px) and (min-width: 601px) {
   #mainvisual img {
     height: 85vh;
   }
   .parent3Dtransform{
-    margin-bottom: 0;
+    margin-bottom: 1vh;
+  }
+  .parent3Dtransform:hover {
+    transform: rotateY(720deg);
   }
   .s-flex-item {
     margin: 10px;
