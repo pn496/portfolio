@@ -1,6 +1,14 @@
+/*-------------------------------------------
+AOS animation (Skills)
+-------------------------------------------*/
+AOS.init({
+  duration: 3000
+});
+/*-------------------------------------------
+Menu/Top btn
+-------------------------------------------*/
 const btn = document.querySelector('.btn-menu');
 const nav = document.querySelector('.main-nav');
-
 btn.addEventListener('click', () => {
   nav.classList.toggle('open-menu');
   if (btn.innerHTML === 'Menu') {
@@ -9,18 +17,10 @@ btn.addEventListener('click', () => {
     btn.innerHTML = 'Menu';
   }
 });
-
-/*-------------------------------------------
-AOS animation
--------------------------------------------*/
-AOS.init({
-  duration: 3000
-});
 $(function() {
-
-// 変数にクラスを入れる
+  // 変数にクラスを入れる
   var btn = $('.btn-menu');
-//スクロールしてページトップから1に達したらボタンを表示
+  //スクロールしてページトップから1に達したらボタンを表示
 $(window).on('load scroll', function(){
   if($(this).scrollTop() > 270) {
   btn.addClass('active');
@@ -47,6 +47,9 @@ $(function() {
     });
   });
 });
+/*-------------------------------------------
+VANTA 3D動画
+-------------------------------------------*/
 VANTA.CLOUDS({
   el: "#header",
   mouseControls: true,

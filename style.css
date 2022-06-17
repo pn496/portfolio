@@ -289,38 +289,36 @@ Skills
   transition: 2s;
   cursor: crosshair;
 }
-.s-flex-item:nth-child(5):active {
+.s-flex-item:nth-child(5):hover {
   transform: rotate(720deg);
   transition: 3s;
-  cursor: grabbing;
+  cursor: crosshair;
 }
-.s-flex-item:nth-child(6):active {
+.s-flex-item:nth-child(6):hover {
   transform: rotateX(720deg);
   transition: 3s;
-  cursor: grabbing;
+  cursor: crosshair;
 }
-.s-flex-item:nth-child(7):active {
+.s-flex-item:nth-child(7):hover {
   transform: rotateY(720deg);
   transition: 3s;
-  cursor: grabbing;
+  cursor: crosshair;
 }
-.s-flex-item:nth-child(8):active {
+.s-flex-item:nth-child(8):hover {
   transform: rotate3d(1,1,1,360deg);
   transition: 3s;
-  cursor: grabbing;
+  cursor: crosshair;
 }
-.s-flex-item:nth-child(9):active {
+.s-flex-item:nth-child(9):hover {
   transform: translate(80px,-100px);
   transition: 0.8s;
-  cursor: grab;
+  cursor: crosshair;
   mix-blend-mode: difference;
-  zoom: 200%;
 }
-.s-flex-item:nth-child(10):active {
+.s-flex-item:nth-child(10):hover {
   transform: translate(-80px,-100px);
   transition: 0.8s;
-  cursor: grab;
-  zoom: 200%;
+  cursor: crosshair;
   mix-blend-mode: color-dodge;
 }
 .s-flex-item > img {
@@ -346,17 +344,17 @@ Skills
   margin-left: auto;
   margin-right: auto;
   }
-.parent3Dtransform:active {
-  transform: rotate3d(1,1,1,360deg);
-  transition: 3s;
-  cursor: crosshair;
-  }
   .parent3Dtransform div{
   position: absolute;
   width: 50px;
   height: 50px;
   line-height: 50px;
   text-align: center;
+  cursor: crosshair;
+  }
+.parent3Dtransform:hover {
+  transform: rotate3d(1,1,1,360deg);
+  transition: 3s;
   }
   .front{
   transform: translate3d(0px, 0px, 12.5px);
