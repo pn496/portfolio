@@ -436,7 +436,6 @@ Contact
   color: #fff;
   cursor: pointer;
 }
-
 /*-------------------------------------------
 フッター
 -------------------------------------------*/
@@ -458,12 +457,7 @@ IPAD
     margin: 10px;
   }
   .parent3Dtransform{
-    top: 2.5vh;
-    height: 90px;
-  }
-  .parent3Dtransform:hover {
-    transform: rotateY(720deg);
-    transition: 3s;
+    display: none;
   }
   .s-flex-item:nth-child(4):hover {
     transform: rotateY(720deg);
