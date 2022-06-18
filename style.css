@@ -156,14 +156,6 @@ Topへ戻るボタン
 #header li a:hover {
   color: rgb(4, 139, 235);
 }
-#header li img.icon {
-  max-width: 50px;
-  margin: -12px 0 0;
-  opacity: .6;
-}
-#header li img.icon:hover {
-  opacity: 1;
-}
 /*-------------------------------------------
 Mainvisual
 -------------------------------------------*/
@@ -209,10 +201,12 @@ Works
 -------------------------------------------*/
 #works {
   background: rgb(95,158,160,0.2);
+  font-family: serif;
 }
 #works p {
     margin: 10px 0 30px;
     text-align: center;
+    font-family: serif;
 }
 .w-flex-items {
   display: flex;
@@ -230,7 +224,6 @@ Works
   height: 152px;
   object-fit: cover;
   object-position: center;
-  box-shadow: 5px 5px 5px black;
 }
 .w-flex-item img:first-child{
   background-color: #fff;
@@ -239,6 +232,7 @@ Works
   transform: scale(1.1);
   transition: 1s;
   animation: hover-flash 1s;
+  box-shadow: 5px 5px 5px black;  
 }
 @keyframes hover-flash {
   0% { opacity: .2;}
