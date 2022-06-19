@@ -191,6 +191,7 @@ Profile
   margin: 5px 0 15px 40px;
   line-height: 1.4rem;
 }
+
 #profile .profile-title {
   font-weight: bold;
   font-size: 1.3rem;
@@ -207,6 +208,7 @@ Works
     margin: 10px 0 30px;
     text-align: center;
     font-family: serif;
+    text-decoration: underline;
 }
 .w-flex-items {
   display: flex;
@@ -432,9 +434,6 @@ Contact
 IPAD
 ------------------------------------------------------------------*/
 @media screen and (max-width: 1200px) and (min-width: 601px) {
-  .parent3Dtransform{
-    margin-bottom: 1vh;
-  }
   .parent3Dtransform:hover {
     transform: rotateY(720deg);
   }
@@ -503,9 +502,6 @@ SP<600px
     right: 13px;
     bottom: 13px;
   }  
-  .wrapper {
-    margin-bottom: 30px;
-  }
   .site-title {
     margin-top: 20px;
   }
@@ -541,6 +537,7 @@ SP<600px
   #profile img {
     width: 100%;
     object-fit: cover;
+    padding: 4% 0;
   }
   #profile p {
     margin: 0 0 20px;
