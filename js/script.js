@@ -2,7 +2,7 @@
 AOS animation (Skills)
 -------------------------------------------*/
 AOS.init({
-  duration: 3000
+  duration: 1000
 });
 /*-------------------------------------------
 Menu/Top btn
@@ -47,6 +47,7 @@ $(function() {
     });
   });
 });
+
 /*-------------------------------------------
 VANTA 3D動画
 -------------------------------------------*/
@@ -73,3 +74,20 @@ VANTA.NET({
   maxDistance: 24.00,
   spacing: 14.00
 })
+/*-------------------------------------------
+ダークモード手動切り替え
+-------------------------------------------*/
+const btn_dm = document.querySelector("#modeChange");
+ 
+// チェックした時の挙動
+btn_dm.addEventListener("change", () => {
+  if (btn_dm.checked == true) {
+    // ダークモード
+    document.body.classList.remove("lightTheme");
+    document.body.classList.add("darkTheme");
+  } else {
+    // ライトモード
+    document.body.classList.remove("darkTheme");
+    document.body.classList.add("lightTheme");
+  }
+});

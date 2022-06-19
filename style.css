@@ -147,7 +147,7 @@ Topへ戻るボタン
 }
 #header li {
   font-size: 0.9rem;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 #header li a {
   color: #24292e;
@@ -172,7 +172,7 @@ Profile
   display: flex;
 }
 .line {
-  background: linear-gradient(transparent 80%, #4dd1eb 0%);
+  background: linear-gradient(transparent 90%, #4dd1eb 0%);
   font-weight: bold;
 }
 #profile img {
@@ -201,14 +201,20 @@ Profile
 Works
 -------------------------------------------*/
 #works {
-  background: rgb(95,158,160,0.2);
+  background: #24242493;
   font-family: serif;
 }
 #works p {
     margin: 10px 0 30px;
     text-align: center;
     font-family: serif;
+}
+#works a {
+    color: #fff;
     text-decoration: underline;
+}
+#works a:hover {
+    color: rgb(67, 88, 244);
 }
 .w-flex-items {
   display: flex;
@@ -430,6 +436,82 @@ Contact
   padding: 10px 20px;
   text-align: center;
 }
+/*-------------------------------------------
+ダークモード　TOP手動切替
+-------------------------------------------*/
+body.darkTheme {
+    color: #fff;
+    background: #333;
+  }
+  body.darkTheme#works a {
+    color: #fff;
+}
+.cp_ipcheck {
+	width: 70px;
+}
+.cp_ipcheck input {
+	display: none;
+}
+.cp_ipcheck label {
+	position: relative;
+	display: block;
+	cursor: pointer;
+  background-color: rgba(67, 64, 64, 0.478);
+  border-radius: 3px;
+  padding: 1px 1px 3px 2px;
+}
+.cp_ipcheck input[type='checkbox'] {
+	position: absolute;
+	visibility: hidden !important;
+}
+.cp_ipcheck input[type='checkbox'] + label:before,
+.cp_ipcheck input[type='checkbox'] + label:after {
+	position: absolute;
+	top: 50%;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin-top: -6px;
+	content: '';
+}
+.cp_ipcheck input[type='checkbox'] + label:before {
+	right: 1px;
+	width: 29px;
+	height: 15px;
+	border: 1px solid #e4e3e1;
+	border-radius: 15px;
+	background: #ffffff;
+}
+.cp_ipcheck input[type='checkbox'] + label:after {
+	right: 15.5px;
+	width: 15px;
+	height: 15px;
+	-webkit-transition: all 200ms ease-out;
+	        transition: all 200ms ease-out;
+	border-radius: 50%;
+	background: #d8b2b2;
+}
+.cp_ipcheck input[type='checkbox']:checked + label:after {
+	right: 0;
+	background: #000066;
+  content: "\f186";
+  font-family:"Font Awesome 5 Free";
+  font-size: smaller;
+  padding: 1px 0 0 2px;
+  color: #ffff00;
+}
+/*-------------------------------------------
+ダークモード　ブラウザ操作時挙動
+-------------------------------------------*/
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+    color: #fff;
+    transition: 2s;
+  }
+  #works a {
+    color: #fff;
+}
+}
 /*------------------------------------------------------------------
 IPAD
 ------------------------------------------------------------------*/
@@ -515,7 +597,7 @@ SP<600px
   }
   #header li {
     font-size: 0.6rem;
-    margin-left: 15px;
+    margin-left: 7px;
     font-weight: bold;
   }
   #header li:first-child {
@@ -530,6 +612,30 @@ SP<600px
   }
   #mainvisual {
     margin-bottom: 0px;
+  }
+  /*-------------------------------------------
+  ダークモードスイッチ
+  -------------------------------------------*/
+  .cp_ipcheck {
+    width: 50px;
+  }
+  .cp_ipcheck label {
+    padding: 0;
+  }
+  .cp_ipcheck input[type='checkbox'] + label:before {
+    right: 2px;
+    width: 22px;
+    height: 11px;
+    border-radius: 11px;
+  }
+  .cp_ipcheck input[type='checkbox'] + label:after {
+    right: 12.5px;
+    width: 11px;
+    height: 11px;
+  }
+  .cp_ipcheck input[type='checkbox']:checked + label:after {
+    right: 2px;
+    padding: 0 0 0 1px;
   }
   /*-------------------------------------------
   プロフィール
