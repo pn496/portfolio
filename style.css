@@ -253,10 +253,10 @@ Works
   transform-style: preserve-3d;
   perspective: 400px;
   width:20vw;
-  height:15vh;
+  height:100px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10vh;
+  margin-bottom: 100px;
 }
 .parent3Dtransform div{
   position: absolute;
@@ -422,7 +422,7 @@ Contact
   background-color: #24292e;
   color: #fff;
   padding: 15px 0;
-  border: solid 1px #24292e;
+  border: solid 1px #fff;
 }
 #contact .button input:hover {
   background:cadetblue;
@@ -445,6 +445,7 @@ Contact
 body.darkTheme {
     color: #fff;
     background: #333;
+    transition: 2s;
   }
   body.darkTheme#works a {
     color: #fff;
@@ -491,7 +492,7 @@ body.darkTheme {
 	-webkit-transition: all 200ms ease-out;
 	        transition: all 200ms ease-out;
 	border-radius: 50%;
-	background: #d8b2b2;
+	background: #eb8b0da0;
 }
 .cp_ipcheck input[type='checkbox']:checked + label:after {
 	right: 0;
