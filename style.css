@@ -385,7 +385,10 @@ Future steps
   margin-bottom: 40px;
 }
 dd img {
-  width: 6rem;
+  width: 94px;
+  height: 94px;
+  background-color: #fff;
+  object-fit: contain;
 }
 /*-------------------------------------------
 Contact
@@ -587,6 +590,9 @@ SP<600px
   .site-title {
     margin-top: 20px;
   }
+  .wrapper {
+    margin-bottom: 20px;
+  }
   /*-------------------------------------------
   ヘッダー
   -------------------------------------------*/
@@ -635,7 +641,7 @@ SP<600px
   }
   .cp_ipcheck input[type='checkbox']:checked + label:after {
     right: 2px;
-    padding: 0 0 0 1px;
+    padding: 1px 0 0 2px;
   }
   /*-------------------------------------------
   プロフィール
@@ -697,7 +703,8 @@ SP<600px
     padding-top: 0;
   }
   dd img {
-    width: 4rem;
+    width: 66px;
+    height: 66px;
   }
   /*-------------------------------------------
   Contact
