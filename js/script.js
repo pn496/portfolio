@@ -69,11 +69,10 @@ VANTA.NET({
   minWidth: 200.00,
   scale: 1.00,
   scaleMobile: 1.00,
-  color: 0xff7b00,
+  color: 0xff5f00,
   backgroundColor: 0x0,
-  points: 17.00,
-  maxDistance: 29.00,
-  spacing: 16.00
+  points: 12.00,
+  maxDistance: 24.00
 })
 /*-------------------------------------------
 ダークモード手動切り替え
