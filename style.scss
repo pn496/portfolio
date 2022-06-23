@@ -202,7 +202,7 @@ Works
     color: #fff;
     text-decoration: underline;
   &:hover {
-    color: rgb(67, 88, 244);
+    color: rgb(244, 167, 67);
     }
   }
 }
@@ -372,8 +372,8 @@ Future steps
   padding: 15px;
   margin-bottom: 40px;
   img {
-    width: 94px;
-    height: 94px;
+    width: 70px;
+    height: 70px;
     background-color: #fff;
     object-fit: contain;
   }
@@ -619,10 +619,10 @@ SP<600px
     }
   }
   .cp_ipcheck label {
-    padding-left: 2px;
+    padding-left: 3px;
   }
   .cp_ipcheck input[type='checkbox'] + label:before {
-    right: 1px;
+    right: 2px;
     width: 21px;
     height: 11px;
     border-radius: 11px;

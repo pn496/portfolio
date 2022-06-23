@@ -228,7 +228,7 @@ Works
   text-decoration: underline;
 }
 #works a:hover {
-  color: #4358f4;
+  color: #f4a743;
 }
 
 .w-flex-items {
@@ -430,8 +430,8 @@ Future steps
   margin-bottom: 40px;
 }
 #future dd img {
-  width: 94px;
-  height: 94px;
+  width: 70px;
+  height: 70px;
   background-color: #fff;
   -o-object-fit: contain;
      object-fit: contain;
@@ -708,11 +708,11 @@ SP<600px
   }
 
   .cp_ipcheck label {
-    padding-left: 2px;
+    padding-left: 3px;
   }
 
   .cp_ipcheck input[type=checkbox] + label:before {
-    right: 1px;
+    right: 2px;
     width: 21px;
     height: 11px;
     border-radius: 11px;
