@@ -140,6 +140,12 @@ Topへ戻るボタン
     a {
       color: #24292e;
       padding: 5px 0;
+    &:hover {
+      color: rgba(11, 95, 251, 0.987)
+    }
+    }
+    &:hover {
+      color: #fff;
     }
   }
 }
@@ -190,6 +196,7 @@ Works
 #works {
   background: radial-gradient(#20aad8, #402c86);
   font-family: serif;
+  color:#fff;
   p {
     margin: 10px 0 30px;
     text-align: center;
@@ -225,6 +232,9 @@ Works
       animation: hover-flash 1s;
       box-shadow: 5px 5px 5px black;  
     }
+  }
+  p {
+    color: #fff;
   }
 }
 @keyframes hover-flash {
@@ -349,7 +359,7 @@ Future steps
   padding: 15px;
 }
 #future dd {
-  border-bottom: solid 2px #3bb6dc;
+  border-bottom: solid 2px rgba(41, 74, 222, 0.573);
   padding: 15px;
   margin-bottom: 40px;
   img {
@@ -387,14 +397,12 @@ Contact
   text-align: center;
   input {
     width: 200px;
-    background-color: #24292e;
+    background: radial-gradient(#20aad8, #402c86);
     color: #fff;
     padding: 15px 0;
-    border: solid 1px #fff;
+    border: solid 1px rgb(0, 0, 0);
     &:hover {
-      background:radial-gradient(#20aad8, #402c86);
-      color: #fff;
-      cursor: pointer;
+      background: radial-gradient(#E6551E, #F5BC2D);
     }
   }
 }
