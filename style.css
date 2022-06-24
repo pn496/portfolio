@@ -158,6 +158,12 @@ Topへ戻るボタン
   color: #24292e;
   padding: 5px 0;
 }
+#header li a:hover {
+  color: rgba(11, 95, 251, 0.987);
+}
+#header li:hover {
+  color: #fff;
+}
 
 /*-------------------------------------------
 Mainvisual
@@ -214,6 +220,7 @@ Works
 #works {
   background: radial-gradient(#20aad8, #402c86);
   font-family: serif;
+  color: #fff;
 }
 #works p {
   margin: 10px 0 30px;
@@ -255,6 +262,9 @@ Works
   -webkit-animation: hover-flash 1s;
           animation: hover-flash 1s;
   box-shadow: 5px 5px 5px black;
+}
+.w-flex-item p {
+  color: #fff;
 }
 
 @-webkit-keyframes hover-flash {
@@ -406,7 +416,7 @@ Future steps
 }
 
 #future dd {
-  border-bottom: solid 2px #3bb6dc;
+  border-bottom: solid 2px rgba(41, 74, 222, 0.573);
   padding: 15px;
   margin-bottom: 40px;
 }
@@ -452,15 +462,13 @@ Contact
 }
 #contact .button input {
   width: 200px;
-  background-color: #24292e;
-  color: #fff;
-  padding: 15px 0;
-  border: solid 1px #fff;
-}
-#contact .button input:hover {
   background: radial-gradient(#20aad8, #402c86);
   color: #fff;
-  cursor: pointer;
+  padding: 15px 0;
+  border: solid 1px black;
+}
+#contact .button input:hover {
+  background: radial-gradient(#E6551E, #F5BC2D);
 }
 
 /*-------------------------------------------
