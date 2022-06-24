@@ -141,9 +141,6 @@ Topへ戻るボタン
       color: #24292e;
       padding: 5px 0;
     }
-    :hover {
-      color: rgb(4, 139, 235);
-    }
   }
 }
 /*-------------------------------------------
@@ -298,56 +295,40 @@ Skills
 }
 .s-flex-item {
   margin: 20px;
-  &:nth-child(1):hover {
-    transform: rotate(360deg);
+  &:hover {
     transition: 2s;
     cursor: crosshair;
+  }
+  &:nth-child(1):hover {
+    transform: rotate(360deg);
   }
   &:nth-child(2):hover {
     transform: rotateX(360deg);
-    transition: 2s;
-    cursor: crosshair;
   }
   &:nth-child(3):hover {
     transform: rotateY(360deg);
-    transition: 2s;
-    cursor: crosshair;
   }
   &:nth-child(4):hover {
     transform: rotate3d(1,1,1,360deg);
-    transition: 2s;
-    cursor: crosshair;
   }
   &:nth-child(5):hover {
     transform: rotate(720deg);
-    transition: 3s;
-    cursor: crosshair;
   }
   &:nth-child(6):hover {
     transform: rotateX(720deg);
-    transition: 3s;
-    cursor: crosshair;
   }
   &:nth-child(7):hover {
     transform: rotateY(720deg);
-    transition: 3s;
-    cursor: crosshair;
   }
   &:nth-child(8):hover {
     transform: rotate3d(1,1,1,360deg);
-    transition: 3s;
-    cursor: crosshair;
   }
   &:nth-child(9):hover {
     transform: translate(80px,-100px);
-    transition: 0.8s;
-    cursor: crosshair;
     mix-blend-mode: difference;
   }
   &:nth-child(10):hover {
     transform: translate(-80px,-100px);
-    transition: 0.8s;
-    cursor: crosshair;
     mix-blend-mode: color-dodge;
   }
 }
@@ -471,7 +452,7 @@ body.darkTheme#works a {
 	height: 15px;
 	border: 1px solid #e4e3e1;
 	border-radius: 15px;
-	background: #ffffff;
+	background: #fff;
 }
 .cp_ipcheck input[type='checkbox'] + label:after {
 	right: 15.5px;
