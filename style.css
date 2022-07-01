@@ -472,6 +472,12 @@ Contact
   background: radial-gradient(#E6551E, #F5BC2D);
 }
 
+.sns .line-official {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*-------------------------------------------
 フッター
 -------------------------------------------*/
