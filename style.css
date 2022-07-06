@@ -40,11 +40,14 @@ li {
 
 .font-size-small {
   font-size: small;
-  margin-left: 20px;
 }
 
 .yellow {
   color: yellow;
+}
+
+.sp_only {
+  display: none;
 }
 
 /*-------------------------------------------
@@ -171,7 +174,7 @@ Mainvisual
 #mainvisual img {
   width: 100%;
   height: 100%;
-  padding: 4%;
+  padding: 4% 30%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -197,7 +200,7 @@ Profile
 }
 
 #profile li:first-child {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -223,10 +226,14 @@ Works
   color: #fff;
 }
 #works p {
-  margin: 10px 0 30px;
+  margin: 10px 0 40px;
   text-align: center;
   font-family: serif;
 }
+#works .sec-title {
+  padding: 32px 0 0;
+}
+
 #works a {
   color: #fff;
   text-decoration: underline;
@@ -348,6 +355,20 @@ Skills
   padding-bottom: 1px;
 }
 
+#skills p {
+  line-height: 1.5rem;
+  margin-bottom: 5px;
+}
+
+#skills p:first-of-type {
+  text-align: center;
+  margin: 10px 0 30px;
+}
+
+#skills .sec-title {
+  padding: 32px 0 0;
+}
+
 .s-flex-items {
   justify-content: space-around;
   flex-wrap: wrap;
@@ -392,6 +413,14 @@ Skills
   mix-blend-mode: difference;
 }
 .s-flex-item:nth-child(10):hover {
+  transform: translate(-80px, -100px);
+  mix-blend-mode: color-dodge;
+}
+.s-flex-item:nth-child(11):hover {
+  transform: translate(80px, -100px);
+  mix-blend-mode: difference;
+}
+.s-flex-item:nth-child(12):hover {
   transform: translate(-80px, -100px);
   mix-blend-mode: color-dodge;
 }
@@ -592,6 +621,11 @@ IPAD
   .s-flex-item:nth-child(8):hover {
     transform: rotateX(720deg);
   }
+
+  .s-flex-item:nth-child(12):hover {
+    transform: rotateX(720deg);
+  }
+
 }
 /*------------------------------------------------------------------
 SP<860px
@@ -609,6 +643,9 @@ SP<860px
 SP<600px
 ------------------------------------------------------------------*/
 @media screen and (max-width: 600px) {
+  .sp_only {
+    display: block;
+  }
   .btn-menu {
     top: 13px;
     right: 13px;
@@ -734,7 +771,9 @@ SP<600px
        object-fit: cover;
     padding: 4% 0;
   }
-
+  #mainvisual img {
+    padding: 4%;
+}
   #profile p {
     margin: 0 0 20px;
   }
@@ -781,7 +820,20 @@ SP<600px
     transform: translate(0, -150px);
     mix-blend-mode: lighten;
   }
+  .s-flex-item:nth-child(11):hover {
+    transform: translate(0, -150px);
+    mix-blend-mode: difference;
+  }
 
+  .s-flex-item:nth-child(12):hover {
+    transform: translate(0, -150px);
+    mix-blend-mode: lighten;
+  }
+ #skills p {
+  font-size: 0.7rem;
+  line-height: 1.1rem;
+  margin: 0 4% 10px;
+ }
   /*-------------------------------------------
   Future steps
   -------------------------------------------*/
