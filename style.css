@@ -225,12 +225,12 @@ Works
   font-family: serif;
   color: #fff;
 }
-#works p {
+#works p,#works_other p {
   margin: 10px 0 40px;
   text-align: center;
   font-family: serif;
 }
-#works .sec-title {
+#works .sec-title,#works .sec-title {
   padding: 32px 0 0;
 }
 
@@ -238,7 +238,11 @@ Works
   color: #fff;
   text-decoration: underline;
 }
-#works a:hover {
+#works_other a {
+  color: #000;
+  text-decoration: underline;
+}
+#works a:hover,#works_other a:hover {
   color: #f4a743;
 }
 
