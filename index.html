@@ -55,8 +55,11 @@
     <!-- second:my css -->
     <!-- aos animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <!-- jquery lightbox -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.11.3/jquery.min.js"></script>
     <!-- style.css read -->
     <link rel="stylesheet" href="style.css">
+    <link href="lightbox.css" rel="stylesheet">
   </head>
   <body>
     <header id="header">
@@ -157,18 +160,18 @@
       <h2 class="sec-title"> Other Works</h2>
       <p><span class="font-size-small">〜 Works using effective skills 〜</span></p>
       <div class="w-flex-items">
-        <div class="w-flex-item"><img src="images/work11.png" alt="フォトグラファー">
-          <p><a href="images/work111.png">Illustrator オープン広告</a></p></div>
-        <div class="w-flex-item"><img src="images/work12.png" alt="ﾊﾝﾄﾞﾒｲﾄﾞｱｸｾｻﾘｰ">
-          <p><a href="images/work122.png">Illustrator メニュー表</a></p></div>          
-        <div class="w-flex-item"><img src="images/work13.png" alt="手書加工">
-          <p><a href="images/work133.png">Illustrator アクセスマップ</a></p></div>
-        <div class="w-flex-item"><img src="images/work14.png" alt="フォトグラファー">
-          <p><a href="images/work144.png">Illustrator アイコン</a></p></div>
-        <div class="w-flex-item"><img src="images/work15.png" alt="ﾊﾝﾄﾞﾒｲﾄﾞｱｸｾｻﾘｰ">
-          <p><a href="images/work155.png">Illustrator ロゴ</a></p></div>          
-        <div class="w-flex-item"><img src="images/work16.png" alt="手書加工">
-          <p><a href="images/work166.png">Adobe Photoshop アニメ化加工</a></p></div>
+        <div class="w-flex-item"><img src="images/work11.png" alt="オープン広告">
+          <p><a href="images/work111.png" data-lightbox="detail" data-title="Illustrator オープン広告">Illustrator オープン広告</a></p></div>
+        <div class="w-flex-item"><img src="images/work12.png" alt="メニュー表">
+          <p><a href="images/work122.png" data-lightbox="detail" data-title="Illustrator メニュー表">Illustrator メニュー表</a></p></div>          
+        <div class="w-flex-item"><img src="images/work13.png" alt="アクセスマップ">
+          <p><a href="images/work133.png" data-lightbox="detail" data-title="Illustrator アクセスマップ">Illustrator アクセスマップ</a></p></div>
+        <div class="w-flex-item"><img src="images/work14.png" alt="アイコン">
+          <p><a href="images/work144.png" data-lightbox="detail" data-title="Illustrator アイコン">Illustrator アイコン</a></p></div>
+        <div class="w-flex-item"><img src="images/work15.png" alt="ロゴ">
+          <p><a href="images/work155.png" data-lightbox="detail" data-title="Illustrator ロゴ">Illustrator ロゴ</a></p></div>          
+        <div class="w-flex-item"><img src="images/work16.png" alt="アニメ化加工">
+          <p><a href="images/work166.png" data-lightbox="detail" data-title="Adobe Photoshop アニメ化加工">Adobe Photoshop アニメ化加工</a></p></div>
       </div>
     </section>
 
@@ -275,6 +278,7 @@
   <!-- JavaScript -->
   <!-- jquery --><script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <!-- jquery --><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <!-- jquery lightbox--><script src="js/lightbox.js"></script>
   <!-- vanta clouds -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
