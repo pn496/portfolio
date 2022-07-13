@@ -172,13 +172,34 @@ Topへ戻るボタン
 Mainvisual
 -------------------------------------------*/
 #mainvisual img {
+  position: relative;
   width: 100%;
   height: 100%;
-  padding: 4% 30%;
+  padding: 4% 20%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
+#mainvisual h2 {
+  position: absolute;
+  left: 21vw;
+  z-index: 1;
+  font-size: 4rem;
+  margin-top: 55vh;
+  font-family: serif;
+  text-shadow: 2px 2px 2px antiquewhite;
+  color: #000;
+}
+#mainvisual p {
+  position: absolute;
+  left: 21vw;
+  z-index: 1;
+  margin-top: 67vh;
+  font-size: 1.2rem;
+  background: #ffffffbd;
+  color: #000;
+  font-family: serif;
+  padding: 5px;
+}
 /*-------------------------------------------
 Profile
 -------------------------------------------*/
@@ -239,8 +260,10 @@ Works
   text-decoration: underline;
 }
 #works_other a {
-  color: #000;
+  color: #fff;
   text-decoration: underline;
+  background: #000000ba;
+  padding: 3px;
 }
 #works a:hover,#works_other a:hover {
   color: #f4a743;
@@ -432,7 +455,10 @@ Skills
   transform: translate(-80px, -100px);
   mix-blend-mode: color-dodge;
 }
-
+.s-flex-item:nth-child(14):hover {
+  transform: translate(-80px, -100px);
+  mix-blend-mode: color-dodge;
+}
 .s-flex-item > img {
   width: 8rem;
   height: 8rem;
@@ -634,17 +660,41 @@ IPAD
     transform: rotateX(720deg);
   }
 
+  #mainvisual img {
+    padding: 4% 7%;
+}
+  #mainvisual h2 {
+    left: 11vw;
+    margin-top: 24vh;
+  }
+  #mainvisual p {
+    left: 8vw;
+    margin-top: 32vh;
+  }
 }
 /*------------------------------------------------------------------
 SP<860px
 ------------------------------------------------------------------*/
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 860px) and (min-width: 601px) {
   .containar {
     flex-direction: column;
   }
 
   #profile img {
     margin-bottom: 20px;
+  }
+
+  #mainvisual img {
+    padding: 4%;
+  }
+  #mainvisual h2 {
+  font-size: 3rem;
+  margin-top: 32vh;
+  }
+  #mainvisual p {
+  font-size: 0.9rem;
+  margin-top: 41vh;
+  line-height: 1.8rem;
   }
 }
 /*------------------------------------------------------------------
@@ -735,7 +785,20 @@ SP<600px
   }
 
   #mainvisual {
-    margin-bottom: 0px;
+    margin-bottom: 30vh;
+  }
+
+  #mainvisual h2 {
+    font-size: 1.5rem;
+    margin-top: 53vh;
+    left: 6vw;
+}
+  #mainvisual p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    left: 1vw;
+    padding: 0 3%;
+    margin: 62vh 5% 0;
   }
 
   /*-------------------------------------------
@@ -838,6 +901,10 @@ SP<600px
     mix-blend-mode: lighten;
   }
   .s-flex-item:nth-child(13):hover {
+    transform: translate(0, -150px);
+    mix-blend-mode: lighten;
+  }
+  .s-flex-item:nth-child(14):hover {
     transform: translate(0, -150px);
     mix-blend-mode: lighten;
   }
