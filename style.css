@@ -260,9 +260,9 @@ Works
   text-decoration: underline;
 }
 #works_other a {
-  color: #fff;
+  color: #000;
   text-decoration: underline;
-  background: #000000ba;
+  background: #fff;
   padding: 3px;
 }
 #works a:hover,#works_other a:hover {
@@ -701,6 +701,10 @@ SP<860px
 SP<600px
 ------------------------------------------------------------------*/
 @media screen and (max-width: 600px) {
+  .containar {
+    flex-direction: column;
+  }
+
   .sp_only {
     display: block;
   }
@@ -785,17 +789,17 @@ SP<600px
   }
 
   #mainvisual {
-    margin-bottom: 30vh;
+    margin-bottom: 38vh;
   }
 
   #mainvisual h2 {
     font-size: 1.5rem;
     margin-top: 53vh;
     left: 6vw;
-}
+  }
   #mainvisual p {
     font-size: 0.8rem;
-    line-height: 1rem;
+    line-height: 1.3rem;
     left: 1vw;
     padding: 0 3%;
     margin: 62vh 5% 0;
