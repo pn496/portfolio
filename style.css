@@ -637,6 +637,27 @@ body.darkTheme#works a {
   }
 }
 /*------------------------------------------------------------------
+1440>width
+------------------------------------------------------------------*/
+@media screen and (max-width: 1440px) and (min-width: 601px) {
+  #profile img {
+    margin-bottom: 20px;
+  }
+
+  #mainvisual img {
+    padding: 4%;
+  }
+  #mainvisual h2 {
+  font-size: 3rem;
+  margin-top: 52vh;
+  }
+  #mainvisual p {
+  font-size: 0.9rem;
+  margin-top: 61vh;
+  line-height: 1.8rem;
+  }
+}
+/*------------------------------------------------------------------
 IPAD
 ------------------------------------------------------------------*/
 @media screen and (max-width: 1200px) and (min-width: 601px) {
@@ -659,42 +680,32 @@ IPAD
   .s-flex-item:nth-child(12):hover {
     transform: rotateX(720deg);
   }
-
-  #mainvisual img {
-    padding: 4% 7%;
-}
-  #mainvisual h2 {
-    left: 11vw;
-    margin-top: 24vh;
-  }
-  #mainvisual p {
-    left: 8vw;
-    margin-top: 32vh;
-  }
-}
-/*------------------------------------------------------------------
-SP<860px
-------------------------------------------------------------------*/
-@media screen and (max-width: 860px) and (min-width: 601px) {
   .containar {
     flex-direction: column;
   }
-
-  #profile img {
-    margin-bottom: 20px;
+}
+/*------------------------------------------------------------------
+SP<900px
+------------------------------------------------------------------*/
+@media screen and (max-width: 900px) and (min-width: 601px) {
+  .containar {
+    flex-direction: column;
+  }
+  #mainvisual {
+    margin-bottom: 43vh;
   }
 
-  #mainvisual img {
-    padding: 4%;
-  }
   #mainvisual h2 {
-  font-size: 3rem;
-  margin-top: 32vh;
+    font-size: 1.5rem;
+    margin-top: 53vh;
+    left: 6vw;
   }
   #mainvisual p {
-  font-size: 0.9rem;
-  margin-top: 41vh;
-  line-height: 1.8rem;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    left: 1vw;
+    padding: 0 3%;
+    margin: 62vh 5% 0;
   }
 }
 /*------------------------------------------------------------------
@@ -957,3 +968,12 @@ SP<600px
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+  /*-------------------------------------------
+  320<width
+  -------------------------------------------*/
+@media screen and (max-width: 450px){
+#mainvisual {
+    margin-bottom: 58vh;
+  }
+}
