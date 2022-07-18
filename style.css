@@ -697,7 +697,7 @@ SP<900px
 
   #mainvisual h2 {
     font-size: 1.5rem;
-    margin-top: 53vh;
+    margin-top: 70vh;
     left: 6vw;
   }
   #mainvisual p {
@@ -705,7 +705,7 @@ SP<900px
     line-height: 1.3rem;
     left: 1vw;
     padding: 0 3%;
-    margin: 62vh 5% 0;
+    margin: 77vh 5% 0;
   }
 }
 /*------------------------------------------------------------------
@@ -974,6 +974,6 @@ SP<600px
   -------------------------------------------*/
 @media screen and (max-width: 450px){
 #mainvisual {
-    margin-bottom: 58vh;
+    margin-bottom: 48vh;
   }
 }
