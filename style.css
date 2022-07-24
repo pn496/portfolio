@@ -933,10 +933,11 @@ SP<600px
   }
 
   #mainvisual h2 {
-    font-size: 1.2rem;
-    margin-top: 53vh;
+    font-size: 0.9rem;
+    margin-top: 50vh;
     left: 6vw;
-  }
+    color: blanchedalmond;
+}
   #mainvisual p {
     font-size: 0.8rem;
     line-height: 1.3rem;
