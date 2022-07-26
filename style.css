@@ -183,11 +183,10 @@ Mainvisual
   position: absolute;
   left: 21vw;
   z-index: 1;
-  font-size: 3rem;
-  margin-top: 55vh;
+  font-size: 2.5rem;
+  margin: 55vh auto 0;
   font-family: serif;
-  text-shadow: 2px 2px 2px black;
-  color: #fff;
+  text-shadow: 2px 2px 2px rgb(228, 228, 228);
 }
 #mainvisual p {
   position: absolute;
@@ -777,12 +776,13 @@ body.darkTheme#works a {
     padding: 4%;
   }
   #mainvisual h2 {
-  font-size: 3rem;
-  margin-top: 52vh;
+  font-size: 2.5rem;
+  margin: 52vh auto 0;
+  width: 70vw;
   }
   #mainvisual p {
   font-size: 0.9rem;
-  margin-top: 61vh;
+  margin-top: 70vh;
   line-height: 1.8rem;
   }
 }
@@ -834,7 +834,7 @@ SP<900px
     line-height: 1.3rem;
     left: 1vw;
     padding: 0 3%;
-    margin: 77vh 5% 0;
+    margin: 83vh 5% 0;
   }
 }
 /*------------------------------------------------------------------
@@ -936,7 +936,6 @@ SP<600px
     font-size: 0.9rem;
     margin-top: 50vh;
     left: 6vw;
-    color: blanchedalmond;
 }
   #mainvisual p {
     font-size: 0.8rem;
