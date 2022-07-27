@@ -774,16 +774,26 @@ body.darkTheme#works a {
 
   #mainvisual img {
     padding: 4%;
+    margin-bottom: 25vh;
   }
   #mainvisual h2 {
-  font-size: 2.5rem;
-  margin: 52vh auto 0;
+  font-size: 2rem;
+  margin: 58vh auto 0;
   width: 70vw;
+  left: 16vw;
   }
   #mainvisual p {
-  font-size: 0.9rem;
-  margin-top: 70vh;
+  font-size: none;
+  margin-top: 66vh;
   line-height: 1.8rem;
+  left: 10vw;
+  }
+  .popup {
+    width: 100%;
+    height: 100%;
+  }
+  #popup {
+    width: 75%;
   }
 }
 /*------------------------------------------------------------------
