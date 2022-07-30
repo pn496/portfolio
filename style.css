@@ -39,7 +39,7 @@ li {
 }
 
 .font-size-small {
-  font-size: 0.7rem;
+  font-size: 14px;
 }
 
 .yellow {
@@ -943,13 +943,13 @@ SP<600px
   }
 
   #mainvisual h2 {
-    font-size: 0.9rem;
+    font-size: 15px;
     margin-top: 50vh;
     left: 6vw;
 }
   #mainvisual p {
-    font-size: 0.8rem;
-    line-height: 1.3rem;
+    font-size: 14px;
+    line-height: 1.5em;
     left: 1vw;
     padding: 0 3%;
     margin: 62vh 5% 0;
@@ -1063,15 +1063,15 @@ SP<600px
     mix-blend-mode: lighten;
   }
  #skills p {
-  font-size: 0.7rem;
-  line-height: 1.1rem;
+  font-size: 14px;
+  line-height: 1.5em;
   margin: 0 4% 10px;
  }
   /*-------------------------------------------
   Future steps
   -------------------------------------------*/
   .sec-title {
-    font-size: 1.2rem;
+    font-size: 14px;
     margin-top: 7vh;
   }
 
@@ -1086,7 +1086,7 @@ SP<600px
   }
 
   #future dd {
-    font-size: 13px;
+    font-size: 14px;
     width: 100%;
     padding-top: 0;
   }
