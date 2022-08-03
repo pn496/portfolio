@@ -458,6 +458,10 @@ Skills
   transform: translate(-80px, -100px);
   mix-blend-mode: color-dodge;
 }
+.s-flex-item:nth-child(15):hover {
+  transform: translate(-80px, -100px);
+  mix-blend-mode: color-dodge;
+}
 .s-flex-item > img {
   width: 8rem;
   height: 8rem;
