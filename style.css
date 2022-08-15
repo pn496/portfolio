@@ -635,14 +635,29 @@ Future steps
   color: rgb(3, 3, 3);
 }
 
-.popup-content h3 {
+.popup-content h2 {
   margin-bottom: 3rem;
+}
+
+.popup-content h3 {
+  margin: 3rem 0 1.5rem;
 }
 
 .pop-box li {
   list-style: disc;
   line-height: 1.5rem;
   margin-left: 10px;
+}
+
+.popup-content h2,
+h3 {
+  text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: deeppink;
+  text-decoration-thickness: 2px;
 }
 
 /*-------------------------------------------
