@@ -602,6 +602,7 @@ Future steps
   padding: 0 10px;
   position: absolute;
   right: 0;
+  z-index: 300;
 }
 
 /* 閉じるボタン */
@@ -927,6 +928,10 @@ IPAD
   }
 
   .s-flex-item:nth-child(12):hover {
+    transform: rotateX(720deg);
+  }
+
+  .s-flex-item:nth-child(16):hover {
     transform: rotateX(720deg);
   }
 
