@@ -226,27 +226,32 @@ Profile
   font-weight: bold;
 }
 
-#profile img {
+#profile img,
+#profile2 img {
   width: 25rem;
 }
 
-#profile ul {
+#profile ul,
+#profile2 ul {
   margin: 0 0 30px 40px;
 }
 
-#profile li:first-child {
+#profile li:first-child,
+#profile2 li:first-child {
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-#profile p {
+#profile p,
+#prpfile2 p {
   text-align: justify;
   margin: 5px 0 15px 40px;
   line-height: 1.4rem;
 }
 
-#profile .profile-title {
+#profile .profile-title,
+#profile2 .profile-title {
   font-weight: bold;
   font-size: 1.3rem;
   margin-bottom: 10px;
@@ -262,7 +267,8 @@ Works
 }
 
 #works p,
-#works_other p {
+#works_other p,
+#works_other2 p {
   margin: 10px 0 40px;
   text-align: center;
   font-family: serif;
@@ -278,7 +284,8 @@ Works
   text-decoration: underline;
 }
 
-#works_other a {
+#works_other a,
+#works_other2 a {
   color: #000;
   text-decoration: underline;
   background: #fff;
@@ -286,7 +293,8 @@ Works
 }
 
 #works a:hover,
-#works_other a:hover {
+#works_other a:hover,
+#works_other2 a:hover {
   color: #f4a743;
 }
 
@@ -874,7 +882,9 @@ body.darkTheme#works a {
 1440>width
 ------------------------------------------------------------------*/
 @media screen and (max-width: 1440px) and (min-width: 601px) {
-  #profile img {
+
+  #profile img,
+  #profile2 img {
     margin-bottom: 20px;
   }
 
@@ -891,7 +901,7 @@ body.darkTheme#works a {
   }
 
   #mainvisual p {
-    font-size: none;
+    font-size: 1.4rem;
     margin-top: 66vh;
     line-height: 1.8rem;
     left: 10vw;
@@ -1118,7 +1128,8 @@ SP<600px
   /*-------------------------------------------
   プロフィール
   -------------------------------------------*/
-  #profile img {
+  #profile img,
+  #prpfile2 img {
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
@@ -1129,15 +1140,18 @@ SP<600px
     padding: 4%;
   }
 
-  #profile p {
+  #profile p,
+  #profile2 p {
     margin: 0 0 20px;
   }
 
-  #profile ul {
+  #profile ul,
+  #prpfile2 ul {
     margin: 0;
   }
 
-  #profile {
+  #profile,
+  #profile2 {
     margin-bottom: 60px;
   }
 
