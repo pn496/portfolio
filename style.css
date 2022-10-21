@@ -570,6 +570,11 @@ Future steps
   object-fit: contain;
 }
 
+#profile2 img {
+  width: 90%;
+  height: auto;
+}
+
 /* 全体設定 */
 * {
   box-sizing: border-box;
