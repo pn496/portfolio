@@ -257,6 +257,12 @@ Profile
   margin-bottom: 10px;
 }
 
+#profile2 .profile-title2 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+
 /*-------------------------------------------
 Works
 -------------------------------------------*/
@@ -424,13 +430,13 @@ Skills
   margin-bottom: 5px;
 }
 
-#skills p:first-of-type {
+/* #skills p:first-of-type {
   text-align: center;
   margin: 10px 0 30px;
-}
+} */
 
 #skills .sec-title {
-  padding: 32px 0 0;
+  padding: 32px 0;
 }
 
 .s-flex-items {
@@ -811,6 +817,8 @@ body.darkTheme#works a {
 
 .cp_ipcheck {
   width: 70px;
+  margin: -2px;
+  margin-left: 20px;
 }
 
 .cp_ipcheck input {
@@ -861,7 +869,7 @@ body.darkTheme#works a {
 .cp_ipcheck input[type=checkbox]:checked+label:after {
   right: 0;
   background: #000066;
-  content: "\f186";
+  /* content: "\f186"; */
   font-family: "Font Awesome 5 Free";
   font-size: smaller;
   padding: 1px 0 0 2px;
@@ -963,9 +971,9 @@ SP<900px
     flex-direction: column;
   }
 
-  #mainvisual {
+  /* #mainvisual {
     margin-bottom: 43vh;
-  }
+  } */
 
   #mainvisual h2 {
     font-size: 1.5rem;
@@ -986,6 +994,11 @@ SP<900px
 SP<600px
 ------------------------------------------------------------------*/
 @media screen and (max-width: 600px) {
+  .cp_ipcheck {
+    margin: 0 0 0 10px;
+    font-size: 8px;
+  }
+
   .containar {
     flex-direction: column;
   }
@@ -1079,9 +1092,9 @@ SP<600px
     margin: -17px 0 0;
   }
 
-  #mainvisual {
+  /* #mainvisual {
     margin-bottom: 38vh;
-  }
+  } */
 
   #mainvisual h2 {
     font-size: 15px;
@@ -1225,7 +1238,7 @@ SP<600px
   Future steps
   -------------------------------------------*/
   .sec-title {
-    font-size: 14px;
+    /* font-size: 14px; */
     margin-top: 7vh;
   }
 
@@ -1286,7 +1299,7 @@ SP<600px
   320<width
   -------------------------------------------*/
 @media screen and (max-width: 450px) {
-  #mainvisual {
+  /* #mainvisual {
     margin-bottom: 48vh;
-  }
+  } */
 }
