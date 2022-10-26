@@ -183,11 +183,16 @@ Topへ戻るボタン
 /*-------------------------------------------
 Mainvisual
 -------------------------------------------*/
+.picture {
+  text-align: center;
+}
+
 #mainvisual img {
   position: relative;
   width: 100%;
-  height: 100%;
-  padding: 4% 20%;
+  height: auto;
+  padding: 0 27%;
+  margin-bottom: 3rem;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -723,7 +728,7 @@ Contact
 }
 
 #contact .button input:hover {
-  background: radial-gradient(#E6551E, #F5BC2D);
+  opacity: 0.8;
 }
 
 #contact p:first-of-type {
@@ -782,8 +787,16 @@ label span:hover {
   cursor: pointer;
 }
 
+label:hover {
+  opacity: 0.8;
+}
+
 input[type="checkbox"] {
   display: none;
+}
+
+.line-btn:hover {
+  opacity: 0.8;
 }
 
 /*checkboxがチェックの状態になったらpopupを表示させる*/
