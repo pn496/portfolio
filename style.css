@@ -1323,6 +1323,13 @@ SP<600px
   375<width
   -------------------------------------------*/
 @media screen and (max-width: 375px) {
+  #mainvisual img {
+    margin-bottom: 0;
+}
+  
+  #profile p {
+    line-height: 1.4;
+  }
   #profile .wrapper {
     padding: 0 4%;
   }
@@ -1330,6 +1337,10 @@ SP<600px
   #profile2 .wrapper {
     margin: 0 0 50px 0;
     padding: 0 4%;
+  }
+
+  .pc_only {
+    display: none;
   }
 
 }
