@@ -873,9 +873,9 @@ body.darkTheme#works a {
 }
 
 .cp_ipcheck input[type=checkbox]+label:before {
-  right: 1px;
-  width: 29px;
-  height: 15px;
+  right: 3px;
+  width: 26px;
+  height: 13px;
   border: 1px solid #e4e3e1;
   border-radius: 15px;
   background: #fff;
@@ -883,15 +883,15 @@ body.darkTheme#works a {
 
 .cp_ipcheck input[type=checkbox]+label:after {
   right: 15.5px;
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
   transition: all 1000ms ease-out;
   border-radius: 50%;
   background: #eb8b0da0;
 }
 
 .cp_ipcheck input[type=checkbox]:checked+label:after {
-  right: 0;
+  right: 3px;
   background: #000066;
   /* content: "\f186"; */
   font-family: "Font Awesome 5 Free";
@@ -1343,4 +1343,11 @@ SP<600px
     display: none;
   }
 
+  .cp_ipcheck {
+    width: 53px;
+  }
+
+  .cp_ipcheck label {
+    padding: 0px 1px 1px;
+}
 }
