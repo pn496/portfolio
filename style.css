@@ -1325,11 +1325,12 @@ SP<600px
 @media screen and (max-width: 375px) {
   #mainvisual img {
     margin-bottom: 0;
-}
-  
+  }
+
   #profile p {
     line-height: 1.4;
   }
+
   #profile .wrapper {
     padding: 0 4%;
   }
@@ -1349,5 +1350,5 @@ SP<600px
 
   .cp_ipcheck label {
     padding: 0px 1px 1px;
-}
+  }
 }
